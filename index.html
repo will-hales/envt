@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Business Name</title>
+    <title>Local Tech Handyman</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -15,50 +19,165 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#">Your Logo</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">Enviro Tech</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#how-i-help">How I Help</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="bg-primary text-white text-center py-5">
+    <header class="bg-primary text-white py-5">
         <div class="container">
-            <h1>Welcome to [Your Business Name]</h1>
-            <p class="lead">Your tagline or mission statement goes here.</p>
-            <a href="#services" class="btn btn-light btn-lg">Explore Our Services</a>
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h1 class="display-4 mb-4">Tech Support at Your Doorstep in Clifton</h1>
+                    <div class="hero-features mb-4">
+                        <p class="lead mb-4">Professional tech help when you need it. From computer repairs to WiFi
+                            solutions, I'm here to make technology work for you.</p>
+                        <ul class="feature-list-light">
+                            <li><i class="fas fa-check-circle me-2"></i>Same/Next Day Response</li>
+                            <li><i class="fas fa-check-circle me-2"></i>Home & Business Visits</li>
+                            <li><i class="fas fa-check-circle me-2"></i>Clear, Jargon-free Explanations</li>
+                            <li><i class="fas fa-check-circle me-2"></i>Sustainable Tech Solutions</li>
+                        </ul>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="tel:+YOUR_PHONE" class="btn btn-light btn-lg me-3">
+                            <i class="fas fa-phone-alt me-2"></i>Call Now
+                        </a>
+                        <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" class="btn btn-success btn-lg">
+                            <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block">
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <i class="fas fa-clock-rotate-left"></i>
+                            <h3>Quick Response</h3>
+                            <p>Available within 24-48 hours</p>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Local Service</h3>
+                            <p>Clifton & surrounding areas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
         </div>
     </header>
 
     <!-- Services Section -->
-    <section id="services" class="py-5">
+    <section id="services">
         <div class="container">
-            <h2 class="text-center mb-4">Our Services</h2>
-            <div class="row">
-                <div class="col-md-4 text-center">
-                    <div class="card p-3">
-                        <h3>Service 1</h3>
-                        <p>Brief description of this service.</p>
+            <h2>Services Offered</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="service-image">
+                            <img src="computer.jpg" alt="Computer Repair" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="h4">Computer Services</h3>
+                            <ul class="list-unstyled">
+                                <li>Virus removal</li>
+                                <li>Software installation</li>
+                                <li>Hardware upgrades</li>
+                                <li>System optimization</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
-                    <div class="card p-3">
-                        <h3>Service 2</h3>
-                        <p>Brief description of this service.</p>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="service-image">
+                            <img src="internet.jpg" alt="Network Setup" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="h4">Internet Services</h3>
+                            <ul class="list-unstyled">
+                                <li>WiFi installation</li>
+                                <li>Network security</li>
+                                <li>Device connectivity</li>
+                                <li>Router configuration</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
-                    <div class="card p-3">
-                        <h3>Service 3</h3>
-                        <p>Brief description of this service.</p>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="service-image">
+                            <img src="e-waste.jpg" alt="Smart Home Setup" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="h4">Recycling Services</h3>
+                            <ul class="list-unstyled">
+                                <li>Smart device installation</li>
+                                <li>Voice assistant setup</li>
+                                <li>Home automation</li>
+                                <li>Security camera setup</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How I Help Section -->
+    <section id="how-i-help">
+        <div class="container">
+            <h2>How I Help</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="help-card text-center">
+                        <div class="help-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3 class="h5">Home Visits</h3>
+                        <p>Direct to your doorstep in Clifton</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="help-card text-center">
+                        <div class="help-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 class="h5">Quick Response</h3>
+                        <p>Available within 24-48 hours</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="help-card text-center">
+                        <div class="help-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="h5">Expert Solutions</h3>
+                        <p>Clear explanations and reliable fixes</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="help-card text-center">
+                        <div class="help-icon">
+                            <i class="fas fa-pound-sign"></i>
+                        </div>
+                        <h3 class="h5">Fair Pricing</h3>
+                        <p>Transparent, competitive rates</p>
                     </div>
                 </div>
             </div>
@@ -66,42 +185,120 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="bg-light py-5">
+    <section id="about">
         <div class="container">
-            <h2 class="text-center mb-4">About Us</h2>
-            <p class="text-center">A brief overview of your business, its history, and mission.</p>
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="about.jpg" alt="Tech Support Services" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <p class="lead mb-4">From global software engineering to local tech support, I'm bringing
+                        enterprise-level expertise to our Clifton community.</p>
+
+                    <p>As a software engineer who's worked on projects for global brands, I've seen firsthand how
+                        technology can transform businesses. Now, I'm channeling that experience into helping our local
+                        community overcome their tech challenges.</p>
+
+                    <p>What drives me is more than just fixing technical issues - I'm passionate about:</p>
+
+                    <ul class="list-unstyled feature-list mb-4">
+                        <li>
+                            <i class="fas fa-check-circle text-primary me-2"></i>
+                            Making technology accessible and less frustrating for everyone
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle text-primary me-2"></i>
+                            Finding new homes for old tech through recycling and redistribution
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle text-primary me-2"></i>
+                            Supporting our community with professional, patient guidance
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle text-primary me-2"></i>
+                            Providing sustainable solutions that last
+                        </li>
+                    </ul>
+
+                    <p class="sustainability-note">
+                        <i class="fas fa-leaf text-success me-2"></i>
+                        <strong>Sustainability Focus:</strong> I work with local charities to ensure working tech finds
+                        its way to those who need it most, while responsibly recycling devices that have reached their
+                        end of life.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
+    <!-- Testimonials Section -->
+    <section id="testimonials">
         <div class="container">
-            <h2 class="text-center mb-4">Contact Us</h2>
-            <form class="mx-auto" style="max-width: 600px;">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+            <h2>Testimonials</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"Fantastic service! Fixed my computer issues quickly and
+                                explained everything clearly. Would definitely recommend."</p>
+                            <p class="testimonial-author">- Sarah from Clifton</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"Set up my entire smart home system and helped me understand how
+                                to use it. Professional, patient, and very knowledgeable."</p>
+                            <p class="testimonial-author">- James from Redland</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"Solved our WiFi problems that had been frustrating us for
+                                months. Great communication and reasonable prices."</p>
+                            <p class="testimonial-author">- Emma from Cotham</p>
+                        </div>
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Send</button>
-            </form>
+            </div>
         </div>
     </section>
-
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Your Business Name. All Rights Reserved.</p>
+    <footer class="py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">
+                        <strong class="text-primary">Clifton Tech Help</strong> • Local Tech Support
+                    </p>
+                    <p class="text-muted small mb-0">
+                        Serving Clifton, Redland, Cotham & surrounding areas
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <div class="footer-contact">
+                        <a href="tel:+YOUR_PHONE" class="text-decoration-none me-3">
+                            <i class="fas fa-phone-alt text-primary me-1"></i>
+                            <span class="text-dark">Call</span>
+                        </a>
+                        <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" class="text-decoration-none">
+                            <i class="fab fa-whatsapp text-success me-1"></i>
+                            <span class="text-dark">WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </body>
 
 </html>
