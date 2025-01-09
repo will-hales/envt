@@ -871,17 +871,24 @@ footer {
     }
 } 
 
-/* Update WhatsApp button color to match brand green */
+/* Update WhatsApp button colors */
 .hero-cta .btn-success,
 .whatsapp-button {
-    background-color: #10e47f;
-    border-color: #10e47f;
+    background-color: rgba(16, 228, 127, 0.7); /* Reduced opacity further */
+    border-color: rgba(16, 228, 127, 0.7);
 }
 
 .hero-cta .btn-success:hover,
 .whatsapp-button:hover {
-    background-color: #2ff591;
-    border-color: #2ff591;
+    background-color: rgba(16, 228, 127, 0.9); /* Slightly more opaque on hover */
+    border-color: rgba(16, 228, 127, 0.9);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(16, 228, 127, 0.15);
+}
+
+/* Footer WhatsApp icon */
+.footer-contact .fa-whatsapp {
+    color: rgba(16, 228, 127, 0.7);
 }
 
 /* Update feature icons color */
@@ -911,20 +918,20 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Replace stat cards with hero image styling */
 .hero-image-wrapper {
-    position: relative;
-    height: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-end;
-    background: transparent;
 }
 
 .hero-image {
     max-width: 100%;
     height: auto;
-    border-radius: 1rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    mix-blend-mode: multiply;
+}
+
+/* Remove any existing hero image styles */
+.hero-image-wrapper::before,
+.hero-image-wrapper::after {
+    display: none;
 }
 
 /* Update responsive styling */
