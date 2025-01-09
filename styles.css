@@ -389,12 +389,25 @@ header.bg-primary::before {
 /* Testimonials */
 .testimonial-card {
     background: white;
-    padding: 2rem;
+    padding: 2.5rem;
     border-radius: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 20px rgba(0, 74, 173, 0.1);
     text-align: center;
     position: relative;
-    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Make each card a different subtle gradient */
+.testimonial-card:nth-child(1) {
+    background: linear-gradient(135deg, rgba(0, 74, 173, 0.1) 0%, rgba(0, 98, 227, 0.1) 100%);
+}
+
+.testimonial-card:nth-child(2) {
+    background: linear-gradient(135deg, rgba(16, 228, 127, 0.1) 0%, rgba(47, 245, 145, 0.1) 100%);
+}
+
+.testimonial-card:nth-child(3) {
+    background: linear-gradient(135deg, rgba(0, 74, 173, 0.08) 0%, rgba(16, 228, 127, 0.08) 100%);
 }
 
 .testimonial-image {
@@ -413,9 +426,25 @@ header.bg-primary::before {
 }
 
 .testimonial-text {
-    margin-top: 3rem;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
     font-style: italic;
-    color: #333333;
+}
+
+.testimonial-author {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 1.1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.testimonial-author::before {
+    content: '—';
+    margin-right: 0.5rem;
+    opacity: 0.5;
 }
 
 .testimonial-author {
@@ -642,16 +671,20 @@ section h2::after {
     background-color: white;
 }
 
-#how-i-help {
-    background-color: var(--gray-light);
+#common-problems {
+    background: rgba(0, 74, 173, 0.03); /* Very light blue */
 }
 
-#about {
+#process {
     background-color: white;
 }
 
+#about {
+    background: rgba(16, 228, 127, 0.03); /* Very light green */
+}
+
 #testimonials {
-    background-color: var(--gray-light);
+    background-color: white;
 }
 
 #contact {
@@ -780,7 +813,7 @@ header.bg-primary {
 
 /* Footer styling */
 footer {
-    background-color: var(--gray-light);
+    background: rgba(0, 74, 173, 0.03); /* Very light blue */
     border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
@@ -939,4 +972,144 @@ header.bg-primary h1.display-4 {
 header.bg-primary .lead,
 header.bg-primary p {
     color: rgba(255, 255, 255, 0.9);
+}
+
+/* Problem Cards Styling */
+.problem-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    height: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.problem-card i {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin-bottom: 1.5rem;
+}
+
+.problem-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+/* Process Steps Styling */
+.process-step {
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: var(--primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin: 0 auto 1.5rem;
+}
+
+.process-step h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.process-step::after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    right: -50%;
+    width: 100%;
+    height: 2px;
+    background: var(--primary);
+    opacity: 0.2;
+}
+
+.process-step:last-child::after {
+    display: none;
+}
+
+/* Update Problem Cards Styling */
+.problem-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Remove Tech Tips section and its styles */
+#tech-tips {
+    display: none;
+}
+
+/* Make each card a different gradient */
+.testimonial-card:nth-child(1) .testimonial-content {
+    background: linear-gradient(135deg, #004aad 0%, #0062e3 100%);
+}
+
+.testimonial-card:nth-child(2) .testimonial-content {
+    background: linear-gradient(135deg, #10e47f 0%, #2ff591 100%);
+}
+
+.testimonial-card:nth-child(3) .testimonial-content {
+    background: linear-gradient(135deg, #004aad 0%, #10e47f 100%);
+}
+
+.testimonial-text {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-author {
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.testimonial-author::before {
+    content: '—';
+    margin-right: 0.5rem;
+    opacity: 0.7;
+}
+
+/* Add a subtle hover effect */
+.testimonial-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Remove gradient backgrounds from testimonial content */
+.testimonial-card:nth-child(1) .testimonial-content,
+.testimonial-card:nth-child(2) .testimonial-content,
+.testimonial-card:nth-child(3) .testimonial-content {
+    background: none;
+}
+
+/* Update text colors */
+.testimonial-text {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.testimonial-author {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 1.1rem;
+    position: relative;
+    display: inline-block;
 }
