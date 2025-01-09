@@ -877,6 +877,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    background: transparent;
 }
 
 .hero-image {
@@ -884,6 +885,7 @@ h1, h2, h3, h4, h5, h6 {
     height: auto;
     border-radius: 1rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    mix-blend-mode: multiply;
 }
 
 /* Update responsive styling */
