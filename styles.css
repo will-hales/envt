@@ -1296,3 +1296,120 @@ header.bg-primary p {
     padding: 0.75rem 0;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    /* Adjust section padding */
+    section {
+        padding: 3rem 0;
+    }
+
+    /* Adjust card spacing */
+    .card, .problem-card, .impact-card, .testimonial-card {
+        margin-bottom: 1.5rem;
+    }
+
+    /* Fix container padding */
+    .container {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    /* Adjust hero section */
+    header.bg-primary {
+        padding: 3rem 0 4rem !important;
+        text-align: center;
+    }
+
+    .hero-features {
+        margin: 0 auto;
+    }
+
+    .feature-list-light {
+        text-align: left;
+    }
+
+    /* Adjust CTA buttons */
+    .hero-cta {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero-cta .btn {
+        width: 100%;
+        margin: 0 !important;
+    }
+
+    /* Adjust testimonials */
+    .testimonial-card {
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .testimonial-text {
+        font-size: 1rem;
+    }
+
+    /* Process steps */
+    .process-step {
+        padding: 1.5rem 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .process-step::after {
+        display: none;
+    }
+
+    /* FAQ items */
+    .faq-item {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Footer adjustments */
+    footer {
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    .footer-contact {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    /* Navbar mobile adjustments */
+    .navbar {
+        padding: 1rem 0;
+    }
+
+    .navbar-collapse {
+        background: white;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin-top: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-link {
+        padding: 0.75rem 0 !important;
+        text-align: center;
+    }
+}
+
+/* Additional mobile tweaks for very small screens */
+@media (max-width: 576px) {
+    section h2 {
+        font-size: 1.75rem;
+    }
+
+    .display-4 {
+        font-size: 2rem;
+    }
+
+    .lead {
+        font-size: 1.1rem;
+    }
+}
