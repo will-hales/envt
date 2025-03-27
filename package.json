@@ -1,0 +1,16 @@
+{
+  "name": "jekyll-site-ci",
+  "version": "1.0.0",
+  "description": "CI workflow for Jekyll site with Lighthouse reporting",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 'No build script defined'",
+    "test": "echo 'No test script defined'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@lhci/cli": "^0.14.0"
+  }
+}
