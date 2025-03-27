@@ -41,49 +41,6 @@ jobs:
         with:
           server_address: smtp.postmarkapp.com
           server_port: 587
-          username: name: Jekyll site CI
-
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v4
-    - name: Build the site in the jekyll/builder container
-      run: |
-        docker run \
-        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
-
-  lighthouseci:
-    runs-on: ubuntu-latest
-    needs: build
-
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-      - run: npm install && npm install -g @lhci/cli@0.14.x
-      - run: lhci autorun || true
-
-  send-email:
-    runs-on: ubuntu-latest
-    needs: lighthouseci
-
-    steps:
-      - name: Send Lighthouse Report via Email
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: smtp.postmarkapp.com
-          server_port: 587
           username: ${{ secrets.POSTMARK_API_KEY }}
           password: ${{ secrets.POSTMARK_API_KEY }}
           subject: "Lighthouse Report for Jekyll Site"
