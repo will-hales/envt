@@ -45,6 +45,6 @@ jobs:
           password: ${{ secrets.POSTMARK_API_KEY }}
           subject: "Lighthouse Report for Jekyll Site"
           body: "Please find the attached Lighthouse report."
-          to: willphales09@icloud.com
-          from: will@d-three.co.uk
+          to: "willphales09@icloud.com"
+          from: "will@d-three.co.uk"
           attachments: ./lighthouseci/report.html
