@@ -46,5 +46,5 @@ jobs:
           subject: "Lighthouse Report for Jekyll Site"
           body: "Please find the attached Lighthouse report."
           to: willphales09@icloud.com
-          from: ${{ secrets.POSTMARK_FROM_EMAIL }}
+          from: will@d-three.co.uk
           attachments: ./lighthouseci/report.html
